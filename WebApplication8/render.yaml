@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: api-produtos-dotnet
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    branch: main
+    region: oregon
+    healthCheckPath: /
